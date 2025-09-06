@@ -1,9 +1,55 @@
-.movie-card {
+/* Watchlist Section */
+.watchlist-section {
+  padding: 20px;
+}
+
+.watchlist-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.empty-watchlist {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+/* Horizontal Scroll Container */
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #222;
+}
+
+.movies-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movies-container::-webkit-scrollbar-track {
   background: #222;
+}
+
+.movies-container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Movie Card */
+.movie-card {
+  flex: 0 0 auto;
+  width: 200px;
+  background: #1c1c1c;
+  border-radius: 10px;
   padding: 10px;
-  border-radius: 8px;
   text-align: center;
-  transition: transform 0.2s;
+  color: #fff;
+  transition: transform 0.2s ease;
 }
 
 .movie-card:hover {
@@ -12,21 +58,23 @@
 
 .movie-img {
   width: 100%;
-  height: 270px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
-.watchlist-btn {
-  margin-top: 8px;
-  padding: 6px 10px;
-  border: none;
-  cursor: pointer;
+.movie-title {
+  font-size: 1rem;
+  margin: 8px 0;
   font-weight: bold;
-  border-radius: 4px;
+  color: #ffcc00;
+  white-space: nowrap;      
+  overflow: hidden;          
+  text-overflow: ellipsis;   
 }
 
-.watchlist-btn.added {
-  background-color: gray;
-  color: white;
+.movie-meta {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #ccc;
 }

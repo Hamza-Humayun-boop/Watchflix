@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className="home">
       {/* Popular Section */}
-      <h2 className="section-title">🔥 Popular Movies</h2>
+      <h2 className="section-title"> Popular Movies</h2>
       <div className="movies-container">
         {popularMovies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
@@ -27,7 +27,7 @@ function Home() {
       </div>
 
       {/* Top Rated Section */}
-      <h2 className="section-title">🏆 Highest Rated IMDb</h2>
+      <h2 className="section-title"> Highest Rated IMDb</h2>
       <div className="movies-container">
         {topRatedMovies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />

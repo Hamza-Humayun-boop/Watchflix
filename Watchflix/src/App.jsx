@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import movies from "./data/movies";
 import MovieCard from "./components/MovieCard";
 import Watchlist from "./components/Watchlist";
-import GenrePage from "./pages/GenrePage"; // ✅ Added import
+import GenrePage from "./pages/GenrePage"; 
 import "./App.css";
 import Navbar from "./components/Navbar";
 

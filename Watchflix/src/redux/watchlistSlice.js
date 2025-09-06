@@ -1,26 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [];
-
 const watchlistSlice = createSlice({
   name: "watchlist",
-  initialState,
+  initialState: [],
   reducers: {
     addToWatchlist: (state, action) => {
-      const movie = action.payload;
-      const exists = state.find((m) => m.id === movie.id);
+      const exists = state.find(movie => movie.id === action.payload.id);
       if (!exists) {
-        state.push(movie);
+        state.push(action.payload);
       }
     },
     removeFromWatchlist: (state, action) => {
-      const id = action.payload;
-      return state.filter((m) => m.id !== id);
+      return state.filter(movie => movie.id !== action.payload);
     },
     clearWatchlist: () => {
       return [];
-    },
-  },
+    }
+  }
 });
 
 export const { addToWatchlist, removeFromWatchlist, clearWatchlist } = watchlistSlice.actions;

@@ -28,11 +28,12 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #e50914;
   z-index: 1;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
 
@@ -45,7 +46,7 @@ a {
 
 .nav-links {
   align-items: center;
-    margin-left: 95em;
+  margin-left: 95em;
   border-radius: 20px;
   display: flex;
   list-style: none;

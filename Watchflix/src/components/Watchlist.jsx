@@ -31,7 +31,7 @@ function Watchlist() {
           ))}
 
           <button
-            className="watchlist-btn"
+            className="clearall-btn"
             style={{ marginTop: "20px" }}
             onClick={() => dispatch(clearWatchlist())}
           >

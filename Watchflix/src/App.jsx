@@ -31,7 +31,7 @@ function App() {
 
     {/* Dropdown */}
     <div className="dropdown">
-      <button className="dropbtn">Genres ▾</button>
+      <button className="dropbtn">Genres▾</button>
       <div className="dropdown-content">
         {genres.map((genre) => (
           <Link 

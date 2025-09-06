@@ -73,18 +73,33 @@
 }
 
 .watchlist-btn {
-  text-align: end;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 8px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
   background: #e50914;
   color: white;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
 }
+.clearall-btn {
+ position: fixed;
+ bottom: 20px;   /* 20px from bottom */
+  right: 50%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: large;
+}
 
 .watchlist-btn:hover {
+  background: #b00610;
+}
+.clearall-btn:hover {
   background: #b00610;
 }
 .movie-list {
@@ -98,14 +113,16 @@
 }
 /* Dropdown button */
 .dropbtn {
-  
-  margin-top: 0;  
+  text-align: center;
+  margin-top: 1;  
+  margin-right: 0;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Dropdown content (hidden by default) */
